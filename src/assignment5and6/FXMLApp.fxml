@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment5and6.FXMLAppController">
+    <stylesheets>
+        <URL value="@fxmlapp.css"/>
+    </stylesheets>
+    <SplitPane prefHeight="580.0" prefWidth="600.0">
+        <items>
+            <FlowPane vgap="5" orientation="VERTICAL">
+                <padding>
+                    <Insets left="20" top="10"/>
+                </padding>
+                <Label styleClass="reminder" text="Remember to save files after modifying!"/>
+                <Label styleClass="lbl" text="Enter Destination Name:"/>
+                <TextField fx:id="txtDestination"/>
+                <Label styleClass="lbl" text="Enter Duration of Stay (days):"/>
+                <TextField fx:id="txtDuration"/>
+                <Label styleClass="lbl" text="Enter Amount of People Went With:"/>
+                <TextField fx:id="txtWentWith"/>
+                <Label styleClass="lbl" text="Enter Year:"/>
+                <TextField fx:id="txtYear"/>
+                <Label styleClass="lbl" text="Enter Comments:"/>
+                <TextField fx:id="txtComments"/>
+                <Button text="Add to the list" onAction="#add"/>
+                <Button text="Save to file" onAction="#save"/>
+                <Button fx:id="btnOpen" text="Open a file" onAction="#open"/>
+                <!--C:\Sheridan2023\Term2\PROG24178\Assignment5and6\Assignment5and6-->
+                <Button text="Next record" onAction="#next"/>
+                <Button text="Previous record" onAction="#previous"/>
+                <Button text="First record" onAction="#first"/>
+                <Button text="Last record" onAction="#last"/>                
+                <Button text="Edit record" onAction="#edit"/>
+                <Button text="Delete record" onAction="#delete"/>
+                
+            </FlowPane>
+        </items>
+        <items>
+            <ListView fx:id="lstDestinationList">
+                <padding>
+                    <Insets left="10" top="10"/>
+                </padding>
+            </ListView>
+        </items>
+    </SplitPane>
+</AnchorPane>

@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.split-pane {
+    -fx-background-image:url("vacay.jpg");
+}
+
+.lbl{
+    -fx-display:block;
+    -fx-text-fill:blue;
+    -fx-background-color:whitesmoke;
+    -fx-font-size: "Arial";
+}
+
+.reminder{
+    -fx-text-fill:red;
+}
